@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/activity_keypad"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fde002"
+    android:orientation="vertical"
+    tools:context="com.example.farmer.queuecalculatorstep.MainActivity">>
+
+    <!--  1차 : 산술식 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#b4b2b7"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:padding="10dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="4칙 연산식"/>
+
+        <EditText
+            android:id="@+id/et_arithmetic"
+            android:text="16+12/1-2*2"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:paddingLeft="10dp"
+            android:background="#ffffff"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/tv_num" />
+
+    </RelativeLayout>
+
+    <!--  2차 : queue1 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#e9e0f7"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_lavel1"
+            android:padding="10dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="queue 1"/>
+
+        <TextView
+            android:id="@+id/tv_queue1"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/tv_lavel1"
+            android:background="#ffffff"
+            android:text="queue 1"/>
+    </RelativeLayout>
+
+    <!--  3차 : queue2 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#e9e0f7"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_lavel2"
+            android:padding="10dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="queue 2"/>
+
+        <TextView
+            android:id="@+id/tv_queue2"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/tv_lavel2"
+            android:background="#ffffff"
+            android:text="queue 2"/>
+    </RelativeLayout>
+
+    <!--  5차 : pop1 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#e3ebf4"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_poplavel1"
+            android:padding="10dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="pop"/>
+
+        <TextView
+            android:id="@+id/tv_pop1"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/tv_poplavel1"
+            android:background="#ffffff"
+            android:text=""/>
+    </RelativeLayout>
+
+    <!--  5차 : pop2 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#e3ebf4"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_poplavel3"
+            android:padding="10dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="계산"/>
+
+        <TextView
+            android:id="@+id/tv_pop2"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/tv_poplavel3"
+            android:background="#ffffff"
+            android:text=""/>
+    </RelativeLayout>
+
+    <!--  6차 : 4칙연산 하나 계산 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#dbdee1"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_onelavel"
+            android:padding="10dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="4칙연산"/>
+
+        <TextView
+            android:id="@+id/tv_onecalulator"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/tv_onelavel"
+            android:background="#ffffff"
+            android:text=""/>
+    </RelativeLayout>
+
+    <!--  7차 : 최종 계산 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#dbdee1"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_resultlabel"
+            android:padding="10dp"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:text="결과"/>
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@+id/tv_resultlabel"
+            android:background="#ffffff"
+            android:text=""/>
+    </RelativeLayout>
+
+    <!--  8차 : step -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#dbdee1"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnStep"
+            android:text="POP"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:paddingRight="20dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnClear"
+            android:text="Clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btnStep" />
+    </RelativeLayout>
+
+    <!--   9차 : 빈공백 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#ffffff"
+        android:layout_weight="0.5">
+    </RelativeLayout>
+</LinearLayout>
